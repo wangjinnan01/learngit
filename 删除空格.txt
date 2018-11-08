@@ -1,0 +1,24 @@
+package shanchu;
+
+public class java03 {
+	 public static void main (String [] args) {
+		 String productName ="长虹 3D TV 55860 i";
+		 System.out.println("商品的原名称为："+ productName);
+		 productName= productName.trim();
+		 int nameLen =productName.length();
+		 String namePart1,namePart2;
+		 String newName="";
+		 namePart2 =productName;
+		 for (int i=0;i<nameLen; i++) {
+			 namePart1 =namePart2.substring(0,1);
+			 System.out.println("第"+(i+1)+"次截出的字符为:\' "+namePart1+"\'");
+			 namePart2=namePart2.substring(1);
+			 if (namePart1.trim().length()!=0) {
+				 newName +=namePart1;
+			 }
+		 }
+		 System.out.println("商品的新名称为:"+newName);
+	 }
+	}
+
+

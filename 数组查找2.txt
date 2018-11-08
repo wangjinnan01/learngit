@@ -1,0 +1,20 @@
+package chazha;
+
+public class chaz {
+public static void main(String [] args)
+{
+   int x;
+   int n=0;
+	for( x=100;x<1000;x++)
+	{
+		if(x%2==0&&x%3==0)
+		{
+			if(x%7!=0)
+			{
+				n++;
+			}
+		}
+	}
+	System.out.println(+n);
+}
+}

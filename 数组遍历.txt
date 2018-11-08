@@ -1,0 +1,14 @@
+package 数组遍历;
+
+public class shubianli {
+ public static void main(String [] args)
+{
+	//数组的操作；
+	//获取数组中的元素。通常会用到遍历。
+	int  [] arr = new int [3];
+	for (int x=0;x<3;x++)
+		{
+	System.out.println("arr ["+x+"]="+arr[x]+";");	
+		}
+	}
+}

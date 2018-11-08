@@ -1,0 +1,27 @@
+package huiy;
+	import java.util.Scanner;
+public class hu {
+
+
+ 
+		private static int custNo;
+
+		public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("我行我素购物管理系统 >  客户信息管理 >  添加客户信息");
+		System.out.println("\n");
+		System.out.print("请输入会员号(<4位整数>)：");
+		int custNo = input.nextInt();
+		System.out.println("请输入会员生日（月/日<两位数选项>）：");
+		String custBirth = input.next();
+		System.out.print("请输入积分：");
+		int custScore = input.nextInt();
+		if (custNo>1000&&custNo<10000) {
+		System.out.println("已录入的会员信息是：" );
+		System.out.println("1" );
+		
+		}
+		}
+	}
+
+

@@ -1,0 +1,14 @@
+public class d 
+{
+	public static void main(String [] args)
+	 {
+		 int sum = getsum(4,6);
+		 
+		 System.out.println("sum="+sum);
+	 }
+	
+	 public static int getsum( int x,int y)
+	 {
+		 return x+y;
+	 }
+}

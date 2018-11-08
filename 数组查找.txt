@@ -1,0 +1,21 @@
+package chazhao;
+
+public class sElect {
+	public static void main(String [] args)
+	{
+		int [] arr= {3,2,1,4,2,9};
+		int index=getIndex(arr,2);
+		System.out.println("index="+index);
+	}
+	//定义功能：获取key第一次出现在数组中的位置，如果返回是-1，那么代表该key在数组中不存在。
+	public static int getIndex(int []arr,int key)
+	{
+		for(int x=0;x<arr.length;x++)
+		{
+			if(arr[x]==key)
+				return x;
+		}
+		return -1;
+		
+	}
+}

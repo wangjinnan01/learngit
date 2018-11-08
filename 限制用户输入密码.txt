@@ -1,0 +1,24 @@
+package cishu;
+import java.util.Scanner;
+public class java02 {
+	public static void main(String [] args) {
+		int maxNum =3;
+		String strInitPassword ="123";
+		String strPassword;
+		int i=1;
+		System.out.println("请输入正确的密码且回车，最多只能输入"+maxNum +"次");
+		Scanner input =new Scanner(System.in);
+		while (i<=maxNum) {
+			System.out.print("第"+i+"次输入密码:");
+			strPassword =input.next();
+			if (strPassword.trim().equals(strInitPassword)) {
+				System.out.println("您第"+i+"输入的密码正确，欢迎你登陆！");
+				break;
+			}
+			i++;
+		}
+		if (i> maxNum) {
+			System.out.println("你已经输入了"+maxNum +"次密码，都不正确，无法正常登陆");
+		}
+	}
+}
