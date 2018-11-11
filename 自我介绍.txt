@@ -1,0 +1,56 @@
+package 自我介绍;
+
+public class test {
+public static void main(String [] args) {
+	Teacher4 teacher=new Teacher4();
+	teacher.setName("王晋南");
+	teacher.setAge(21);
+	teacher.setEducation("大学");
+	teacher.setPosition("大学教师");
+	System.out.println(teacher.introduction());
+}
+}
+
+
+package 自我介绍;
+
+public class Teacher4 {
+	
+		private String name;
+		private String education;
+		private String position;
+		private int age;
+		public String introduction() {
+			return"大家好，我是"+name+",我今年"+age+"岁，学历"+
+					education+",目前职位是"+position;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String myName) {
+			name=myName;
+		}
+		public int getAge() {
+			return age;
+		}
+		public void setAge(int myAge) {
+			age=myAge;
+		}
+		public String getEducation() {
+			return education;
+		}
+		public void setEducation(String myEducation) {
+			education=myEducation;
+		}
+		public String getPosition() {
+			return position;
+		}
+		public void setPosition(String myPosition)
+		{
+			position=myPosition;
+		}
+		
+		
+	
+}
+
