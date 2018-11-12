@@ -1,0 +1,35 @@
+编写一个类Book，代表教材：
+具有属性：名称（title）、页数（pageNum）、种类（type）
+具有方法：detail，用来在控制台输出每本教材的名称、页数、种类
+具有两个带参构造方法：第一个构造方法中，设置教材种类为“计算机”（固定），其余属性的值由参数给定；第二个构造方法中，所有属性的值都由参数给定
+编写测试类BookTest进行测试：
+分别以两种方式完成对两个Book对象的初始化工作，并分别调用它们的detail方法，看看输出是否正确
+package 教材类;
+
+public class Book {
+    String title;
+    int pageNum;
+   String type;
+   public void detail() {
+	  System.out.println("名称（title）:"+this.title+"页数（pageNum）:"+this.pageNum+"种类(type):"+this.type);
+   }
+   Book (String title,int pageNum){
+	   this.title=title;
+	   this.pageNum=pageNum;
+	   this.type="计算机";
+	   }
+	   Book (String title,int pageNum,String type){
+	   this.title = title;
+	   this.pageNum = pageNum;
+	   this.type = type;
+	   }  
+}
+
+public class BookTest {
+	public static void main (String[] args){
+		 Book book1=new Book ("book1_title",3);
+		 Book book2=new Book ("book2_title",10,"book2_type");
+		 book1.detail();
+		 book2.detail();
+}
+}
