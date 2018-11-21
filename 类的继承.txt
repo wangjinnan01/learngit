@@ -1,0 +1,44 @@
+package test;
+
+public class test {
+	public static void main(String []args){
+		 Person s=new Person (21,"160110094","史蒂夫"); 
+		 s.show();
+		 Student p=new Student(21,"160110094","史蒂夫","5451515","华信");
+		 p.study();
+}
+}
+
+
+package test;
+
+ class Person {
+	  String name;
+	   int age;
+	   String id;
+	   public Person(int age,String id,String name)
+	   {
+		   this.name=name;
+		   this.age=age;
+		   this.id=id;
+	   }
+	   public void show(){
+		   System.out.println("我的名字"+name+",年龄是"+age+",身份证号是"+id);
+	   }
+ } 
+	   class Student extends Person{
+
+		   String StudentID;
+		   String school;
+		   public Student(int age, String id, String name, String StudentID, String school) 
+		   {
+			super(age, id, name);
+			this.StudentID=StudentID;
+			this.school=school;
+		   }
+		
+	  public void study(){
+			   System.out.println("我的名字"+name+",年龄是"+age+"身份证号是"+id+"学校是"+school+"学号是"+StudentID); 
+		   }
+	   }
+
