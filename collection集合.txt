@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+public class Demo1_Collection {
+
+	public static void main(String[] args) {
+		Collection c=new ArrayList();
+	
+		c.add("a");
+		System.out.println(c);
+	}
+
+}

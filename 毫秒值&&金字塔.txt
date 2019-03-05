@@ -1,0 +1,48 @@
+public class Demo1 {
+
+	public static void main(String[] args) {
+		
+	//Demo_1();
+	//Demo_2();
+		
+		//Demo_3();
+		byte b=10;
+		byte c=15;
+		b=(byte)(b^c);
+		System.out.println(b);
+	
+	}
+	public static void Demo_3() {  //计算毫秒值
+		long start =System.currentTimeMillis();
+		for(int i=0;i<1000;i++){
+			System.out.println("*");
+		}
+		long end = System.currentTimeMillis();
+		System.out.println(end-start);
+	}
+	public static void Demo_2() {
+		int sum=0;
+	for(int i=1;i<50;i++){             //计算金字塔的个数
+		for(int k=1;k<50-i;k++)
+			System.out.print(" ");
+			for(int j=1;j<=2*i-1;j++)
+				//System.out.print("*");
+			   sum++;
+			//	System.out.println();
+			
+	}
+
+	System.out.println(sum);
+	}
+	public static void Demo_1() {
+		System.out.println(fun(5));
+	}
+	public static int fun(int sum){
+		if(sum==1){
+			return 1;
+		}else{
+			return sum*fun(sum-1);
+		}
+	}
+
+}
