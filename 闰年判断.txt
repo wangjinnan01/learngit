@@ -1,0 +1,17 @@
+package com.lanqiao.one;
+
+import java.util.Scanner;
+
+public class ÈòÄêÅĞ¶Ï {
+
+	public static void main(String[] args) {
+	Scanner in= new Scanner(System.in);
+	int i=in.nextInt();
+	if(i%4==0&&i%100!=0||i%100==0){
+		System.out.println("yes");
+	}else{
+		System.out.println("no");
+	}
+	}
+
+}
