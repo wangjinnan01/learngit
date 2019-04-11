@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class 动态数组使用 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		ArrayList list=new ArrayList();
+		for(int i=0;i<n;i++){
+			list.add(in.nextInt());
+			
+		}
+		int sum=0;
+		for(int i=0;i<n;i++){
+			int j=(int)list.get(i);
+			sum+=j;
+		}
+		System.out.println(sum+" "+sum/n);
+	}
+
+}
