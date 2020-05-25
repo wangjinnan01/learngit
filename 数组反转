@@ -1,6 +1,6 @@
 
 /**
- * 实现数组的反转
+ * 实现数组的反转 第一种方式：
  *
  */
 public class ForDemo4 {
@@ -52,3 +52,66 @@ public class ForDemo4 {
 
     }
  }
+ --------------------------------------------------------------------------------------
+
+/**
+ *第二种方式：
+ * 首先创建一个长度是5的数组
+然后给数组的每一位赋予随机整数
+通过for循环，遍历数组，找出最小的一个值出来
+ *
+ */
+public class ForDemo5 {
+
+
+
+    public static void main(String[] args) {
+
+        int[] arr = new int[5];
+        Random random = new Random();
+
+        arr[0] = random.nextInt(100+1);
+        arr[1] = random.nextInt(100+1);
+        arr[2] = random.nextInt(100+1);
+        arr[3] = random.nextInt(100+1);
+        arr[4] = random.nextInt(100+1);
+
+        System.out.println("数组元素反转之前的效果："+"");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]+"");
+
+        }
+        System.out.println("===================");
+        /**
+         * 使用第二个数组实现元素交换
+         */
+
+        int[] arr2 = new int[arr.length];
+        for (int i = 0; i < arr2.length; i++) {
+            arr2[i] = arr[arr2.length-1-i];//
+
+            /**
+             * 含义：数组长度为5，arr2.length-1代表数组最大索引，数组角标是从0开始的，那么最大索引就是4，
+             * arr2.length-1-i就代表4-0，因为i=0代表数组最小索引，使用arr2[i]接收最大索引，那么就是arr2第0个索引等于arr的最大索引，也就是第四个索引，以此类推
+             *  一直向下减4-0 = 4,将最大索引赋值arr2第0个索引, 4-1 =3,将3索引的值赋值给arr2的第1个索引，以此类推 :
+             *
+             *  int[] arr = new int[]{4,6,3,7,1}
+             *  int[] arr2 = new int[]{1,7,3,6,4}
+             *
+             * @param args
+             */
+
+
+        }
+
+        System.out.println("数组元素反转后的效果："+"");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr2[i]+"");
+
+        }
+
+
+    }
+
+
+}
